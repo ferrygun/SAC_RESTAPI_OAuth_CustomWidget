@@ -11,7 +11,7 @@ modules:
       properties:
          url: ${default-url}
    requires:
-      - name: zearnpfe-uaa
+      - name: zrestapi-uaa
       
       
 
@@ -19,7 +19,7 @@ modules:
    type: html5
    path: web
    requires:
-      - name: zearnpfe-uaa
+      - name: zrestapi-uaa
       - name: srv_api
         group: destinations
         properties:
@@ -29,7 +29,7 @@ modules:
           
           
 resources:
-  - name: zearnpfe-uaa
+  - name: zrestapi-uaa
     type: com.sap.xs.uaa-space
     parameters:
       config-path: ./xs-security.json
