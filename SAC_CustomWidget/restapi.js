@@ -248,40 +248,6 @@
                         console.log(partnernumber);
                         this_.wasteTime();
 
-                        /*
-						$.ajax({
-                            url: restAPIURL,
-                            type: 'POST',
-                            data: $.param({
-                                "partnernumber": partnernumber
-                            }),
-							async:true,
-							timeout: 600 * 1000,
-                            contentType: 'application/x-www-form-urlencoded',
-                            success: function(data) {
-								this_.runNext();
-                                console.log(data);
-                                _score = data;
-
-                                that._firePropertiesChanged();
-                                this.settings = {};
-                                this.settings.score = "";
-
-                                that.dispatchEvent(new CustomEvent("onStart", {
-                                    detail: {
-                                        settings: this.settings
-                                    }
-                                }));
-
-                            },
-                            error: function(e) {
-								this_.runNext();
-                                console.log("error: " + e);
-								console.log(e);
-                            }
-                        });
-						*/
-
                         var CLIENT_ID_str = '_client_id_';
                         var CLIENT_SECRET_str = '_client_secret';
 
